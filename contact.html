@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Contact Me</h1>
+      <nav aria-label="Primary">
+        <a href="index.html" class="nav-link" data-nav="index.html">Home</a>
+        <a href="blog.html" class="nav-link" data-nav="blog.html">Blog</a>
+        <a href="contact.html" class="nav-link" data-nav="contact.html">Contact</a>
+      </nav>
+      <button id="themeToggle" class="btn btn-ghost" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required aria-describedby="nameError">
+          <small id="nameError" class="error-text" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required aria-describedby="emailError">
+          <small id="emailError" class="error-text" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required aria-describedby="subjectError">
+          <small id="subjectError" class="error-text" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" required aria-describedby="messageError"></textarea>
+          <small id="messageError" class="error-text" aria-live="polite"></small>
+        </div>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+
+    <small id="formMessage" class="success-text" aria-live="polite"></small>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Sundhoos Rizat || Telephone: <a href="tel:+94 74 0 780988">+94 74 0 780988</a> || E-mail: <a href="mailto:rizatsundhoos@gmail.com">rizatsundhoos@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
